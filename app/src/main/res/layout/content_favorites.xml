@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.shikher.restaurantfinder.FavoritesActivity"
+    tools:showIn="@layout/activity_favorites">
+
+    <ListView
+        android:id="@+id/favourites_result_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5.0sp"
+        android:visibility="gone"></ListView>
+
+    <TextView
+        android:id="@+id/favourites_info_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="No favourites yet. Touch red heart to make favourite"
+        android:textColor="@android:color/black"
+        android:textSize="30dp" />
+
+</LinearLayout>
